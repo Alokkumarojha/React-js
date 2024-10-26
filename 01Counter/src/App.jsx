@@ -8,10 +8,12 @@ function App() {
 
   let increseNumber = () => {
     if (count < 20) {
-      count = count + 1;
-      setCount(count);
+      setCount((prevCounter) => prevCounter + 1);
+      setCount((prevCounter) => prevCounter + 1);
+      setCount((prevCounter) => prevCounter + 1);
+      setCount((prevCounter) => prevCounter + 1);
     } else {
-      setCount("20 ke uper nahi jayega");
+      setCount(20);
     }
   };
   let DecreseNumber = () => {
@@ -19,7 +21,7 @@ function App() {
       count = count - 1;
       setCount(count);
     } else {
-      setCount("Negative number is not allowed");
+      setCount(0);
     }
   };
   return (
