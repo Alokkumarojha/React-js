@@ -7,7 +7,7 @@ function Login() {
   const { setUser } = useContext(UserContext);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // prevent the brouser's default response from that event.
     setUser({ username, password });
   };
 
